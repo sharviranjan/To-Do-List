@@ -1,0 +1,21 @@
+<html>
+    <body style="background-color:rgb(90, 103, 116)">
+        <h1 style="background-color: rgb(73, 149, 171)" align="center">Welcome {{ . }}</h1>
+        <div style="background-color: rgb(83, 115, 154);width:500px ;height:350px; margin: auto;">
+            <br/>
+            <br/>
+            <h2 align="center" style="color:burlywood" >Assign A Task:</h2>
+            <br/>
+            <form align="center" action="/asignDone">
+                <label for="Task">Task Name</label><br/>
+                <input type="text" id="task" name="task" value=""><br/>
+                <label for="Assignee">Assignee</label><br/>
+                <input type="text" id="assignee" name="assignee" value=""><br/>
+                <br/>
+                <input type="submit" value="Asign">
+            </form>
+            <br/>
+            <center><a href="http://localhost:8080/TODO" style="color:burlywood" >TODO</a></center>
+        </div>
+    </body>
+</html>
